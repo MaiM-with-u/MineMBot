@@ -1,7 +1,7 @@
 # MineEye
 ## 为你的Minecraft Java客户端安装一个赛博义眼
 
-> ** Warning **
+> [!CAUTION]
 > 正在早期开发中，可能存在较严重问题或完全不可用！
 
 ---
