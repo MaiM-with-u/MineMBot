@@ -3,20 +3,24 @@
 	"id": "mineeye",
 	"version": "${version}",
 	"name": "MineEye",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Make Your Program Be Able to See Your Minecraft World!",
 	"authors": [
-		"Me!"
+		"jiangyin14",
+		"ChangingSelf"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "Apache-2.0",
 	"icon": "assets/mineeye/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"top.jiangyin14.mineeye.MineEye"
+		],
+		"client": [
+			"top.jiangyin14.mineeye.MineEyeClient"
 		],
 		"fabric-datagen": [
 			"top.jiangyin14.mineeye.MineEyeDataGenerator"
