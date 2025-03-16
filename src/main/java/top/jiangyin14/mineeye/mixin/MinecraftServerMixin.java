@@ -5,12 +5,13 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import top.jiangyin14.mineeye.MineEye;
 
 @Mixin(MinecraftServer.class)
-public class MineEyeMixin {
-	@Inject(at = @At("HEAD"), method = "loadWorld")
-	private void init(CallbackInfo info) {
-		// This code is injected into the start of MinecraftServer.loadWorld()V
+public class MinecraftServerMixin {
+	@Inject(method = "runServer", at = @At("HEAD"))
+	private void onServerStart(CallbackInfo ci) {
+		MinecraftServer server = (MinecraftServer) (Object) this;
+		MineEye.getInstance().setServer(server);
 	}
 }
-
