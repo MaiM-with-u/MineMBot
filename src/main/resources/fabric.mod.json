@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mineeye",
+	"version": "${version}",
+	"name": "MineEye",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mineeye/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"top.jiangyin14.mineeye.MineEye"
+		],
+		"fabric-datagen": [
+			"top.jiangyin14.mineeye.MineEyeDataGenerator"
+		]
+	},
+	"mixins": [
+		"mineeye.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
