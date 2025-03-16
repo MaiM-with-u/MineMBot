@@ -3,9 +3,12 @@
 	"package": "top.jiangyin14.mineeye.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "MineEyeMixin"
+		"MineEyeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
-	}
+	},
+	"client": [
+		"ClientPlayNetworkHandlerMixin"
+	]
 }
