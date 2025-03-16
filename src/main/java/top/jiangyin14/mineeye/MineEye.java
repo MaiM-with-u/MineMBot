@@ -41,10 +41,7 @@ public class MineEye implements ModInitializer {
 	private void startHttpServer() {
 		try {
 			HttpServer httpServer = HttpServer.create(new InetSocketAddress(27632), 0);
-			// Create API route "/v1/player/chat/send"
 			httpServer.createContext("/v1/player/chat/send", new ChatHandler());
-			// Keep the original endpoint for backward compatibility
-			httpServer.createContext("/sendChat", new ChatHandler());
 			httpServer.setExecutor(Executors.newCachedThreadPool());
 			httpServer.start();
 			LOGGER.info("HTTP server started on port 27632");
