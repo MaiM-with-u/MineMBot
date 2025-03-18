@@ -4,10 +4,7 @@ import com.sun.net.httpserver.HttpServer;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.jiangyin14.mineeye.handler.ChatHandler;
-import top.jiangyin14.mineeye.handler.CoordinateHandler;
-import top.jiangyin14.mineeye.handler.BiomeHandler;
-import top.jiangyin14.mineeye.handler.TimeHandler;
+import top.jiangyin14.mineeye.handler.*;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -31,6 +28,7 @@ public class MineEye implements ModInitializer {
 			httpServer.createContext("/v1/player/info/coords", new CoordinateHandler());
 			httpServer.createContext("/v1/player/info/biome", new BiomeHandler());
 			httpServer.createContext("/v1/player/info/time", new TimeHandler());
+			httpServer.createContext("/v1/player/info/facing", new FacingHandler());
 			httpServer.setExecutor(Executors.newCachedThreadPool());
 			httpServer.start();
 			LOGGER.info("HTTP server started on port 27632");
