@@ -1,6 +1,5 @@
 package top.jiangyin14.mineeye.handler;
 
-import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;
@@ -10,11 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.GenerationStep;
-
-
 import java.io.IOException;
-import java.util.Optional;
 
 /**
  * Obtain the biome where the player is located
