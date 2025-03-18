@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import top.jiangyin14.mineeye.handler.ChatHandler;
 import top.jiangyin14.mineeye.handler.CoordinateHandler;
+import top.jiangyin14.mineeye.handler.BiomeHandler;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -27,6 +28,7 @@ public class MineEye implements ModInitializer {
 			HttpServer httpServer = HttpServer.create(new InetSocketAddress(27632), 0);
 			httpServer.createContext("/v1/player/chat/send", new ChatHandler());
 			httpServer.createContext("/v1/player/info/coords", new CoordinateHandler());
+			httpServer.createContext("/v1/player/info/biome", new BiomeHandler());
 			httpServer.setExecutor(Executors.newCachedThreadPool());
 			httpServer.start();
 			LOGGER.info("HTTP server started on port 27632");
