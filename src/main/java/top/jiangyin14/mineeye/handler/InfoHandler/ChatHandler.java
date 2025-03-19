@@ -1,4 +1,4 @@
-package top.jiangyin14.mineeye.handler;
+package top.jiangyin14.mineeye.handler.InfoHandler;
 
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;
@@ -7,6 +7,7 @@ import net.minecraft.network.encryption.NetworkEncryptionUtils;
 import net.minecraft.network.message.LastSeenMessagesCollector;
 import net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket;
 import top.jiangyin14.mineeye.ClientPlayNetworkHandlerAccessor;
+import top.jiangyin14.mineeye.handler.BaseHandler;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

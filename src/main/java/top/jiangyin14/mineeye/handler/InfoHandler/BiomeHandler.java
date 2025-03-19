@@ -1,4 +1,4 @@
-package top.jiangyin14.mineeye.handler;
+package top.jiangyin14.mineeye.handler.InfoHandler;
 
 import com.alibaba.fastjson2.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
@@ -9,6 +9,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import top.jiangyin14.mineeye.handler.BaseHandler;
+
 import java.io.IOException;
 
 /**

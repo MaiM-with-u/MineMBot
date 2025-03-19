@@ -4,7 +4,7 @@ import com.sun.net.httpserver.HttpServer;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.jiangyin14.mineeye.handler.*;
+import top.jiangyin14.mineeye.handler.InfoHandler.*;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

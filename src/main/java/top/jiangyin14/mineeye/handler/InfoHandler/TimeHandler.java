@@ -1,12 +1,13 @@
-package top.jiangyin14.mineeye.handler;
+package top.jiangyin14.mineeye.handler.InfoHandler;
 
 import com.alibaba.fastjson2.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;
+import top.jiangyin14.mineeye.handler.BaseHandler;
 
 import java.io.IOException;
 
-public class TimeHandler extends BaseHandler{
+public class TimeHandler extends BaseHandler {
     @Override
     public void handle(HttpExchange exchange) throws IOException {
         if ("GET".equalsIgnoreCase(exchange.getRequestMethod())) {
