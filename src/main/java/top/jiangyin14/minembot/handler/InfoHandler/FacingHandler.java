@@ -1,4 +1,4 @@
-package top.jiangyin14.mineeye.handler.InfoHandler;
+package top.jiangyin14.minembot.handler.InfoHandler;
 
 import com.alibaba.fastjson2.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
@@ -7,7 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-import top.jiangyin14.mineeye.handler.BaseHandler;
+import top.jiangyin14.minembot.handler.BaseHandler;
 
 import java.io.IOException;
 
@@ -33,9 +33,18 @@ public class FacingHandler extends BaseHandler {
                     }
                     Vec3d pos = client.player.getEyePos();
                     BlockPos blockPos = new BlockPos((int)pos.getX(), (int)pos.getY(), (int)pos.getZ());
-                    BlockState blockState = client.world.getBlockState(blockPos);
-                    Block block = blockState.getBlock();
-                    String blockName = block.getTranslationKey();
+                    BlockState blockState = null;
+                    if (client.world != null) {
+                        blockState = client.world.getBlockState(blockPos);
+                    }
+                    Block block = null;
+                    if (blockState != null) {
+                        block = blockState.getBlock();
+                    }
+                    String blockName = null;
+                    if (block != null) {
+                        blockName = block.getTranslationKey();
+                    }
                     JSONObject jsonObject = new JSONObject();
                     jsonObject.put("block", blockName);
                     jsonObject.put("x", blockPos.getX());

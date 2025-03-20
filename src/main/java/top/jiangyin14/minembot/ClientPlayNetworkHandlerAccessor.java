@@ -1,4 +1,4 @@
-package top.jiangyin14.mineeye;
+package top.jiangyin14.minembot;
 
 import net.minecraft.network.message.LastSeenMessagesCollector;
 

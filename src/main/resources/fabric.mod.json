@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "mineeye",
+	"id": "minembot",
 	"version": "${version}",
-	"name": "MineEye",
-	"description": "Make Your Program Be Able to See Your Minecraft World!",
+	"name": "MineMBot",
+	"description": "Make Your MaiBot Be Able to See Your Minecraft World!",
 	"authors": [
 		"jiangyin14",
 		"ChangingSelf"
@@ -13,21 +13,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "Apache-2.0",
-	"icon": "assets/mineeye/icon.png",
+	"icon": "assets/minembot/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"top.jiangyin14.mineeye.MineEye"
+			"top.jiangyin14.minembot.MineMBot"
 		],
 		"client": [
-			"top.jiangyin14.mineeye.MineEyeClient"
+			"top.jiangyin14.minembot.MineMBotClient"
 		],
 		"fabric-datagen": [
-			"top.jiangyin14.mineeye.MineEyeDataGenerator"
+			"top.jiangyin14.minembot.MineMBotDataGenerator"
 		]
 	},
 	"mixins": [
-		"mineeye.mixins.json"
+		"minembot.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",

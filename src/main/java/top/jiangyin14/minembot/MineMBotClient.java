@@ -1,8 +1,8 @@
-package top.jiangyin14.mineeye;
+package top.jiangyin14.minembot;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class MineEyeClient implements ClientModInitializer {
+public class MineMBotClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 

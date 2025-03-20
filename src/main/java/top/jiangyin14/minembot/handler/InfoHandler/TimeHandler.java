@@ -1,9 +1,9 @@
-package top.jiangyin14.mineeye.handler.InfoHandler;
+package top.jiangyin14.minembot.handler.InfoHandler;
 
 import com.alibaba.fastjson2.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;
-import top.jiangyin14.mineeye.handler.BaseHandler;
+import top.jiangyin14.minembot.handler.BaseHandler;
 
 import java.io.IOException;
 
@@ -19,11 +19,15 @@ public class TimeHandler extends BaseHandler {
             client.execute(() -> {
                 try {
                     JSONObject timeObj = new JSONObject();
-                    timeObj.put("time", client.world.getTimeOfDay());
+                    if (client.world != null) {
+                        timeObj.put("time", client.world.getTimeOfDay());
+                    }
 
                     // day:[0,12000]
                     // night:(12000,24000]
-                    timeObj.put("status", client.world.getTimeOfDay() <= 12000 ? "day" : "night");
+                    if (client.world != null) {
+                        timeObj.put("status", client.world.getTimeOfDay() <= 12000 ? "day" : "night");
+                    }
 
                     LOGGER.info("Current time: {}", timeObj.toJSONString());
                     sendResponse(exchange, 200, timeObj.toJSONString());

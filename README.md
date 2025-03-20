@@ -1,4 +1,4 @@
-# MineEye
+# MineMBot
 ## 为你的Minecraft Java客户端安装一个赛博义眼
 
 > [!CAUTION]

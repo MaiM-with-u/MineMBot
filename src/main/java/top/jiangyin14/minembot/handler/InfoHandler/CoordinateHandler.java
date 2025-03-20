@@ -1,10 +1,10 @@
-package top.jiangyin14.mineeye.handler.InfoHandler;
+package top.jiangyin14.minembot.handler.InfoHandler;
 
 import com.alibaba.fastjson2.JSON;
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.Vec3d;
-import top.jiangyin14.mineeye.handler.BaseHandler;
+import top.jiangyin14.minembot.handler.BaseHandler;
 
 import java.io.IOException;
 

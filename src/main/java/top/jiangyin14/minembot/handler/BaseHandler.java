@@ -1,4 +1,4 @@
-package top.jiangyin14.mineeye.handler;
+package top.jiangyin14.minembot.handler;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
