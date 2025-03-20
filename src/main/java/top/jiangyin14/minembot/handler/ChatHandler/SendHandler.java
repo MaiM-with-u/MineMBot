@@ -1,4 +1,4 @@
-package top.jiangyin14.minembot.handler.InfoHandler;
+package top.jiangyin14.minembot.handler.ChatHandler;
 
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * send message to player in game
  * @author jiangyin14
  */
-public class ChatHandler extends BaseHandler {
+public class SendHandler extends BaseHandler {
     private final Pattern messagePattern = Pattern.compile("\"message\"\\s*:\\s*\"(.*?)\"");
 
     @Override
