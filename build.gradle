@@ -33,6 +33,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	implementation("com.alibaba.fastjson2:fastjson2:2.0.56")
+	implementation 'org.java-websocket:Java-WebSocket:1.5.3'
 	implementation files("lib/nether-pathfinder-1.5.jar")
 	modImplementation files('lib/api-fabric-1.20.4.jar')
 }

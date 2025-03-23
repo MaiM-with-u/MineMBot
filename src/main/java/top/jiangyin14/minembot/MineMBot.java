@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import top.jiangyin14.minembot.handler.ActionHandler.GotoHandler;
 import top.jiangyin14.minembot.handler.ActionHandler.StopHandler;
+import top.jiangyin14.minembot.handler.ChatHandler.MessageHandler;
 import top.jiangyin14.minembot.handler.ChatHandler.SendHandler;
 import top.jiangyin14.minembot.handler.InfoHandler.*;
 
@@ -20,8 +21,13 @@ public class MineMBot implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("MineMBot Initialized!");
+
 		// Start HTTP server when mod initializes
 		startHttpServer();
+
+		// Start WebSocket server when mod initializes
+		MessageHandler chatHandler = new MessageHandler();
+		chatHandler.initialize();
 	}
 
 	private void startHttpServer() {
