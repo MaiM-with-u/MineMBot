@@ -1,4 +1,4 @@
-package top.jiangyin14.minembot.handler.ChatHandler;
+package top.jiangyin14.minembot.handler.PlayerHandlers.ChatHandlers;
 
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;

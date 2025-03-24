@@ -1,4 +1,4 @@
-package top.jiangyin14.minembot.handler.ActionHandler;
+package top.jiangyin14.minembot.handler.PlayerHandlers.ActionHandlers;
 
 import baritone.api.BaritoneAPI;
 import com.alibaba.fastjson2.JSONObject;

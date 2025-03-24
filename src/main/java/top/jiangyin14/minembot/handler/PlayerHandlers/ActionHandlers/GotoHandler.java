@@ -1,10 +1,8 @@
-package top.jiangyin14.minembot.handler.ActionHandler;
+package top.jiangyin14.minembot.handler.PlayerHandlers.ActionHandlers;
 
 import baritone.api.BaritoneAPI;
 import baritone.api.pathing.goals.Goal;
 import baritone.api.pathing.goals.GoalXZ;
-import baritone.api.process.IBaritoneProcess;
-import baritone.api.process.ICustomGoalProcess;
 import com.alibaba.fastjson2.JSONObject;
 import com.sun.net.httpserver.HttpExchange;
 import net.minecraft.client.MinecraftClient;

@@ -1,4 +1,4 @@
-package top.jiangyin14.minembot.handler.ChatHandler;
+package top.jiangyin14.minembot.handler.PlayerHandlers.ChatHandlers;
 
 import com.alibaba.fastjson2.JSONObject;
 import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;

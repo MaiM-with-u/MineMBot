@@ -1,4 +1,4 @@
-package top.jiangyin14.minembot.handler.InfoHandler;
+package top.jiangyin14.minembot.handler.PlayerHandlers.InfoHandlers;
 
 import com.alibaba.fastjson2.JSON;
 import com.sun.net.httpserver.HttpExchange;

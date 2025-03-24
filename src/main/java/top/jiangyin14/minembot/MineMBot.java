@@ -4,11 +4,11 @@ import com.sun.net.httpserver.HttpServer;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.jiangyin14.minembot.handler.ActionHandler.GotoHandler;
-import top.jiangyin14.minembot.handler.ActionHandler.StopHandler;
-import top.jiangyin14.minembot.handler.ChatHandler.MessageHandler;
-import top.jiangyin14.minembot.handler.ChatHandler.SendHandler;
-import top.jiangyin14.minembot.handler.InfoHandler.*;
+import top.jiangyin14.minembot.handler.PlayerHandlers.ActionHandlers.GotoHandler;
+import top.jiangyin14.minembot.handler.PlayerHandlers.ActionHandlers.StopHandler;
+import top.jiangyin14.minembot.handler.PlayerHandlers.ChatHandlers.MessageHandler;
+import top.jiangyin14.minembot.handler.PlayerHandlers.ChatHandlers.SendHandler;
+import top.jiangyin14.minembot.handler.PlayerHandlers.InfoHandlers.*;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
