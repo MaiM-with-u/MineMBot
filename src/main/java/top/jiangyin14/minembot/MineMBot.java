@@ -9,6 +9,7 @@ import top.jiangyin14.minembot.handler.PlayerHandlers.ActionHandlers.StopHandler
 import top.jiangyin14.minembot.handler.PlayerHandlers.ChatHandlers.MessageHandler;
 import top.jiangyin14.minembot.handler.PlayerHandlers.ChatHandlers.SendHandler;
 import top.jiangyin14.minembot.handler.PlayerHandlers.InfoHandlers.*;
+import top.jiangyin14.minembot.handler.SenseHandlers.ScreenshotHandler;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -40,6 +41,7 @@ public class MineMBot implements ModInitializer {
 			httpServer.createContext("/v1/player/info/facing", new FacingHandler());
 			httpServer.createContext("/v1/player/action/goto", new GotoHandler());
 			httpServer.createContext("/v1/player/action/stop", new StopHandler());
+			httpServer.createContext("/v1/sense/screenshot", new ScreenshotHandler());
 			httpServer.setExecutor(Executors.newCachedThreadPool());
 			httpServer.start();
 			LOGGER.info("HTTP server started on port 27632");
